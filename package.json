@@ -1,0 +1,28 @@
+{
+  "name": "abc-app",
+  "version": "1.0.0",
+  "description": "abc hr app",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Sivaram Divi",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "^2.1.0",
+    "axios": "^0.18.0",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3",
+    "install": "^0.12.1",
+    "lodash": "^4.17.11",
+    "log4js": "^3.0.5",
+    "memory-cache": "^0.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
